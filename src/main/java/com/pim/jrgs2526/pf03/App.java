@@ -4,8 +4,9 @@ package com.pim.jrgs2526.pf03;
  * Hello world!
  *
  */
-public class App 
+public class App
 {
+    public static final String ERR_CALC_NOTA = "Error al calcular nota";
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
@@ -16,6 +17,7 @@ public class App
             return -1;
         if (nota >= 5 && nota <= 10)
             return 1;
-        throw new IllegalArgumentException("Error al calcular nota");
+        throw new IllegalArgumentException(ERR_CALC_NOTA);
     }
+
 }
